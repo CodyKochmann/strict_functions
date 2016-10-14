@@ -1,4 +1,4 @@
-# strict_functions.py
+# strict_functions
 
 ---
 
