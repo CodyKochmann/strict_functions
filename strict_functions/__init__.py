@@ -15,3 +15,4 @@ del os
 from input_types import input_types
 from output_type import output_type
 from strict_defaults import strict_defaults
+from on_fail import on_fail
