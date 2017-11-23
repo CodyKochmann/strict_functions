@@ -2,7 +2,7 @@
 # @Author: Cody Kochmann
 # @Date:   2017-11-22 14:00:48
 # @Last Modified 2017-11-22
-# @Last Modified time: 2017-11-22 14:25:14
+# @Last Modified time: 2017-11-22 21:54:34
 
 import builtins
 from types import FunctionType
@@ -21,9 +21,9 @@ class strict_globals(object):
         return FunctionType(
             getattr(fn, 'func_code', getattr(fn, '__code__')),
             self.globals,
-            getattr(fn, 'func_name', None),
-            getattr(fn, 'func_defaults', None),
-            getattr(fn, 'func_closure', None)
+            getattr(fn, 'func_name', getattr(fn, '__name__')),
+            getattr(fn, 'func_defaults', getattr(fn, '__defaults__')),
+            getattr(fn, 'func_closure', getattr(fn, '__closure__'))
         )
 
 if __name__ == '__main__':

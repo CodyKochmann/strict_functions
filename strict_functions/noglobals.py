@@ -2,18 +2,18 @@
 # @Author: Cody Kochmann
 # @Date:   2017-11-22 13:53:53
 # @Last Modified 2017-11-22
-# @Last Modified time: 2017-11-22 14:25:56
+# @Last Modified time: 2017-11-22 21:55:39
 
 import builtins
 
-def noglobals(f):
+def noglobals(fn):
     """ decorator for functions that dont get access to globals """
-    return type(f)(
-        f.func_code,
+    return type(fn)(
+        getattr(fn, 'func_code', getattr(fn, '__code__')),
         {'__builtins__': builtins},
-        f.func_name,
-        f.func_defaults,
-        f.func_closure
+        getattr(fn, 'func_name', getattr(fn, '__name__')),
+        getattr(fn, 'func_defaults', getattr(fn, '__defaults__')),
+        getattr(fn, 'func_closure', getattr(fn, '__closure__'))
     )
 
 
