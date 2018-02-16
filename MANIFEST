@@ -6,5 +6,7 @@ strict_functions/input_types.py
 strict_functions/noglobals.py
 strict_functions/on_fail.py
 strict_functions/output_type.py
+strict_functions/overload.py
+strict_functions/self_aware.py
 strict_functions/strict_defaults.py
 strict_functions/strict_globals.py
