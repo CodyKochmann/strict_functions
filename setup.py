@@ -9,7 +9,7 @@ from distutils.core import setup
 setup(
   name = 'strict_functions',
   packages = ['strict_functions'], # this must be the same as the name above
-  version = '2017.2.16',
+  version = '2018.2.16',
   description = 'collection of helpful strict_functions that should have been in itertools',
   author = 'Cody Kochmann',
   author_email = 'kochmanncody@gmail.com',
