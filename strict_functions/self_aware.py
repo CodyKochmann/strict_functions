@@ -1,6 +1,6 @@
 from inspect import isgeneratorfunction
 from functools import wraps
-from strict_functions import strict_globals
+from strict_globals import strict_globals
 
 def self_aware(fn):
     ''' decorating a function with this allows it to 

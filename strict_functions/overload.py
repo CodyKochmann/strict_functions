@@ -1,5 +1,5 @@
 from functools import wraps
-from strict_functions import strict_globals
+from strict_globals import strict_globals
 
 def overload(fn, function_to_overload=None):
     '''
