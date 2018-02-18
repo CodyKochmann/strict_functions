@@ -2,7 +2,7 @@
 # @Author: Cody Kochmann
 # @Date:   2018-02-06 13:07:06
 # @Last Modified 2018-02-06
-# @Last Modified time: 2018-02-06 16:59:36
+# @Last Modified time: 2018-02-17 21:25:36
 
 from functools import wraps
 from os import listdir, remove
@@ -13,7 +13,7 @@ if version_info>=(3,4):
     from importlib import reload
 elif version_info>=(3,0):
     from imp import reload
-
+from strict_globals import strict_globals
 
 class c_version(object):
     tmp_module_name = '_tmp_c_module'
@@ -55,7 +55,12 @@ class c_version(object):
                 reload(_tmp_c_module)
             except: # fuck you marcin!!!
                 pass
-            def output(*args, fn=getattr(lib, self.name), cast=ffi.cast, types=self.arg_types):
+            @strict_globals(
+                fn=getattr(lib, self.name),
+                cast=ffi.cast,
+                types=self.arg_types
+            )
+            def output(*args):
                 return fn(*(cast(_type, arg) for _type, arg in zip(types, args)))
         except Exception as ex:
             logging.exception(ex)
@@ -73,7 +78,8 @@ class c_version(object):
 
     def __call__(self, fn):
         @wraps(fn)
-        def wrapper(*args, compiled_version=self.compiled):
+        @strict_globals(compiled_version=self.compiled)
+        def wrapper(*args):
             return compiled_version(*args)
         return fn if self.compiled is None else wrapper
 
