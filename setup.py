@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # @Author: Cody Kochmann
 # @Date:   2017-11-09 11:50:41
-# @Last Modified 2017-11-22
-# @Last Modified time: 2018-02-17 21:23:30
+# @Last Modified 2018-02-28
+# @Last Modified time: 2018-02-28 14:26:09
 
 from distutils.core import setup
 
-version = '2018.2.17.3'
+version = '2018.2.28.1'
 
 setup(
   name = 'strict_functions',
