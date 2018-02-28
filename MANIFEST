@@ -3,6 +3,7 @@ setup.py
 strict_functions/__init__.py
 strict_functions/c_version.py
 strict_functions/input_types.py
+strict_functions/never_parallel.py
 strict_functions/noglobals.py
 strict_functions/on_fail.py
 strict_functions/output_type.py
