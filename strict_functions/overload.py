@@ -1,5 +1,4 @@
 from functools import wraps
-from strict_globals import strict_globals
 
 def overload(fn, function_to_overload=None):
     '''
@@ -65,7 +64,6 @@ my_print({i:i*2 for i in range(10)})
     # set up the wrapper
     @wraps(
         function_to_overload)  # inherit documentation of the original version
-    @strict_globals(fn=fn, function_to_overload=function_to_overload)
     def wrapper(*args, **kwargs):
         # try the original first. if it crashes, try the overloading function
         try:
@@ -74,4 +72,4 @@ my_print({i:i*2 for i in range(10)})
             return fn(*args, **kwargs)
 
     return wrapper
-    
+
