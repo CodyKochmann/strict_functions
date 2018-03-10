@@ -6,7 +6,7 @@
 
 from distutils.core import setup
 
-version = '2018.3.5'
+version = '2018.3.10'
 
 setup(
   name = 'strict_functions',

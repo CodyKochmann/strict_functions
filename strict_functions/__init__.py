@@ -2,16 +2,14 @@
 # @Author: cody
 # @Date:   2016-10-14 13:26:43
 # @Last Modified 2018-03-05
-# @Last Modified time: 2018-03-05 10:32:14
+# @Last Modified time: 2018-03-10 08:28:39
 
 import sys
 import os.path
 
 sys.path.append(os.path.dirname(__file__))
 
-del sys
-del os
-
+from attempt import attempt
 from c_version import c_version
 from force_assertions import force_assertions
 from input_types import input_types
@@ -24,3 +22,7 @@ from self_aware import self_aware
 from strict_defaults import strict_defaults
 from strict_globals import strict_globals
 
+sys.path.pop()
+
+del sys
+del os
