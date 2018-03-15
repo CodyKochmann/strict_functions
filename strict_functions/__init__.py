@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: cody
 # @Date:   2016-10-14 13:26:43
-# @Last Modified 2018-03-05
-# @Last Modified time: 2018-03-10 08:28:39
+# @Last Modified 2018-03-15
+# @Last Modified time: 2018-03-15 11:52:06
 
 import sys
 import os.path
@@ -10,7 +10,6 @@ import os.path
 sys.path.append(os.path.dirname(__file__))
 
 from attempt import attempt
-from c_version import c_version
 from force_assertions import force_assertions
 from input_types import input_types
 from never_parallel import never_parallel

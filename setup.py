@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Cody Kochmann
 # @Date:   2017-11-09 11:50:41
-# @Last Modified 2018-02-28
-# @Last Modified time: 2018-02-28 14:26:09
+# @Last Modified 2018-03-15
+# @Last Modified time: 2018-03-15 11:51:55
 
 from distutils.core import setup
 
@@ -15,7 +15,6 @@ setup(
   description = 'collection of helpful strict_functions that should have been in itertools',
   author = 'Cody Kochmann',
   author_email = 'kochmanncody@gmail.com',
-  install_requires = ['cffi'],
   url = 'https://github.com/CodyKochmann/strict_functions',
   download_url = 'https://github.com/CodyKochmann/strict_functions/tarball/{}'.format(version),
   keywords = ['strict_functions', 'type', 'enforce', 'strict', 'restrict', 'strict defaults', 'defaults'],
