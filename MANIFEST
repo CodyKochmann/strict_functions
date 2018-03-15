@@ -2,7 +2,6 @@
 setup.py
 strict_functions/__init__.py
 strict_functions/attempt.py
-strict_functions/c_version.py
 strict_functions/force_assertions.py
 strict_functions/input_types.py
 strict_functions/never_parallel.py
