@@ -33,7 +33,9 @@ class Overload(object):
             if no_args_syntax in line:
                 no_args.append((i, line.find(no_args_syntax)))
         args, no_args = max(args), max(no_args)
-        assert sum(args)+sum(no_args) > -4, 'couldnt find invocation'
+        if sum(args)+sum(no_args) == -4:
+            # couldnt find invocation
+            return False
         return args >= no_args
 
     @staticmethod
