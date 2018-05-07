@@ -6,17 +6,19 @@
 
 from distutils.core import setup
 
-version = '2018.5.7'
+version = '2018.5.7.1'
 
 setup(
   name = 'strict_functions',
   packages = ['strict_functions'], # this must be the same as the name above
   version = version,
-  description = 'collection of helpful strict_functions that should have been in itertools',
+  description = 'helpful decorators that allow you to completely change how python functions work such as scope control 
+  or overloading.',
   author = 'Cody Kochmann',
   author_email = 'kochmanncody@gmail.com',
   url = 'https://github.com/CodyKochmann/strict_functions',
   download_url = 'https://github.com/CodyKochmann/strict_functions/tarball/{}'.format(version),
-  keywords = ['strict_functions', 'type', 'enforce', 'strict', 'restrict', 'strict defaults', 'defaults'],
+  keywords = ['strict_functions', 'scope', 'overload', 'overloading', 'type', 'enforce', 'strict', 'restrict', 'strict 
+  defaults', 'defaults'],
   classifiers = [],
 )
