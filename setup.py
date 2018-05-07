@@ -6,7 +6,7 @@
 
 from distutils.core import setup
 
-version = '2018.5.7.1'
+version = '2018.5.7.2'
 
 setup(
   name = 'strict_functions',
@@ -18,7 +18,6 @@ setup(
   author_email = 'kochmanncody@gmail.com',
   url = 'https://github.com/CodyKochmann/strict_functions',
   download_url = 'https://github.com/CodyKochmann/strict_functions/tarball/{}'.format(version),
-  keywords = ['strict_functions', 'scope', 'overload', 'overloading', 'type', 'enforce', 'strict', 'restrict', 'strict 
-  defaults', 'defaults'],
+  keywords = ['strict_functions', 'scope', 'overload', 'overloading', 'type', 'enforce', 'strict', 'restrict', 'strict defaults', 'defaults'],
   classifiers = [],
 )
