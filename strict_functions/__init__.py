@@ -7,6 +7,9 @@
 import sys
 import os.path
 
+old_path = []
+while sys.path:
+    old_path.append(sys.path.pop())
 sys.path.append(os.path.dirname(__file__))
 
 from attempt import attempt
@@ -21,7 +24,16 @@ from self_aware import self_aware
 from strict_defaults import strict_defaults
 from strict_globals import strict_globals
 
-sys.path.pop()
+if sys.version_info >= (3,0):
+    from trace import trace
+else:
+    from trace2 import trace
 
+while sys.path:
+    sys.path.pop()
+while old_path:
+    sys.path.append(old_path.pop())
+
+del old_path
 del sys
 del os
