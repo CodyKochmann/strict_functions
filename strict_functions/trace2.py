@@ -68,14 +68,16 @@ def default_profiler(f, _type, _value):
         <local-variables>
         ----------------------------------------
     '''
-    profile_print(
-        '\n'.join([
-            get_frame_src(f),
-            get_locals(f),
-            '----------------------------------------'
-        ])
-    )
-
+    try:
+        profile_print(
+            '\n'.join([
+                get_frame_src(f),
+                get_locals(f),
+                '----------------------------------------'
+            ])
+        )
+    except:
+        pass
 def trace(fn=None, profiler=None):
     ''' This decorator allows you to visually trace
         the steps of a function as it executes to see

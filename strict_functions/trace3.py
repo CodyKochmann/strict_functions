@@ -51,13 +51,16 @@ def default_profiler(f:Frame, _type:str, _value:Any):
         <local-variables>
         ----------------------------------------
     '''
-    profile_print(
-        '\n'.join([
-            get_frame_src(f),
-            get_locals(f),
-            '----------------------------------------'
-        ])
-    )
+    try:
+        profile_print(
+            '\n'.join([
+                get_frame_src(f),
+                get_locals(f),
+                '----------------------------------------'
+            ])
+        )
+    except:
+        pass
 
 def trace(fn=None, profiler=None) -> Callable:
     ''' This decorator allows you to visually trace
