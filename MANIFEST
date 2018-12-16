@@ -12,3 +12,5 @@ strict_functions/overload.py
 strict_functions/self_aware.py
 strict_functions/strict_defaults.py
 strict_functions/strict_globals.py
+strict_functions/trace2.py
+strict_functions/trace3.py
