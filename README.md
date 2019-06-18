@@ -1,5 +1,9 @@
 # strict_functions
 
+[![Downloads](https://pepy.tech/badge/strict-functions)](https://pepy.tech/project/strict-functions)
+[![Downloads](https://pepy.tech/badge/strict-functions/month)](https://pepy.tech/project/strict-functions)
+[![Downloads](https://pepy.tech/badge/strict-functions/week)](https://pepy.tech/project/strict-functions)
+
 ---
 
 Strict data type enforcement for Python 2 and Python 3 functions.
