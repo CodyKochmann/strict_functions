@@ -3,6 +3,7 @@
 [![Downloads](https://pepy.tech/badge/strict-functions)](https://pepy.tech/project/strict-functions)
 [![Downloads](https://pepy.tech/badge/strict-functions/month)](https://pepy.tech/project/strict-functions)
 [![Downloads](https://pepy.tech/badge/strict-functions/week)](https://pepy.tech/project/strict-functions)
+[![Known Vulnerabilities](https://snyk.io//test/github/CodyKochmann/strict_functions/badge.svg?targetFile=requirements.txt)](https://snyk.io//test/github/CodyKochmann/strict_functions?targetFile=requirements.txt)
 
 ---
 
