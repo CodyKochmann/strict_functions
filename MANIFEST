@@ -2,8 +2,12 @@
 setup.py
 strict_functions/__init__.py
 strict_functions/attempt.py
+strict_functions/cached2.py
+strict_functions/cached3.py
 strict_functions/force_assertions.py
 strict_functions/input_types.py
+strict_functions/lru_cache2.py
+strict_functions/lru_cache3.py
 strict_functions/never_parallel.py
 strict_functions/noglobals.py
 strict_functions/on_fail.py
