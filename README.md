@@ -6,7 +6,7 @@
 
 ---
 
-Decorators for function scope control, overloading, type safety, thread safety, cache control, tracing and even self awareness in python 2 and 3!
+Decorators for function scope control, overloading, type safety, thread safety, cache control, tracing and even self awareness!
 
 ## How to install
 

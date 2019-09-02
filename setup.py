@@ -2,17 +2,17 @@
 # @Author: Cody Kochmann
 # @Date:   2017-11-09 11:50:41
 # @Last Modified 2018-03-15
-# @Last Modified time: 2018-05-07 11:04:29
+# @Last Modified time: 2019-09-02 12:41:32
 
 from distutils.core import setup
 
-version = '2018.12.16.1'
+version = '2019.9.2.1'
 
 setup(
   name = 'strict_functions',
   packages = ['strict_functions'], # this must be the same as the name above
   version = version,
-  description = 'helpful decorators that change how python functions work such as scope control or overloading.',
+  description = 'Decorators for function scope control, overloading, type safety, thread safety, cache control, tracing and even self awareness!',
   author = 'Cody Kochmann',
   author_email = 'kochmanncody@gmail.com',
   url = 'https://github.com/CodyKochmann/strict_functions',
