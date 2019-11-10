@@ -1,4 +1,4 @@
-feom functools import wraps
+from functools import wraps
 
 '''cheap backports for python2 lru cache'''
 
