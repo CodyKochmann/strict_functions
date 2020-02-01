@@ -4,7 +4,7 @@
 # @Last Modified by:   Cody Kochmann
 # @Last Modified time: 2018-03-10 08:26:00
 
-from noglobals import noglobals
+from .noglobals import noglobals
 
 @noglobals
 def attempt(fn, default_output=None):
